@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--dark-cyan: hsl(185, 75%, 39%);
+--very-dark-desaturated: hsl(229, 23%, 23%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+--dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+    background-color: var(--dark-cyan);
+    
+}
+
+.container {
+    margin: 3.125rem auto 1.875rem auto;
+}
+
+.card {
+    border-radius: 1.25rem;
+    margin: 4.375rem auto auto auto;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    background-color: white;
+}
+
+.card-header {
+    height: 7.5rem;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.card-content {
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+
+
+.img-holder {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    border: 0.313rem solid white;
+    margin: -3.125rem auto 0.313rem auto;
+    overflow: hidden;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3 {
+    padding-top: 1.25em;
+    padding-bottom: 0.625em;
+    font-size: 1.125rem;
+    color: var(--very-dark-desaturated);
+}
+
+h3 span {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+p {
+    padding-bottom: 1.4em;
+    color: var(--dark-gray);
+    
+}
+
+hr {
+    border: .5px solid rgb(243, 238, 238);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--very-dark-desaturated);
+    text-transform: uppercase;
+}
+
+li span {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: var(--dark-gray);
+    padding-top: .5em;
+    letter-spacing: 0.1em;
+    text-transform: none;
+}
+
+.attribution { 
+    font-size: 0.625rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 992px ) {
+    html {
+        font-size: 20px;
+    }
+    .container {
+        margin: 15% auto 3% auto;
+    }
+}
